@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcmail Api - Mail Sender</title>
+</head>
+<body>
+    <script src="js/script.js"></script>
+    <script>
+        // use this keys and assign custom related values
+        const authKey = "auth1";
+        const data = {
+        "fromName" : "john doe", // from name
+        "fromEmail" : "john@example.com", // from email
+        "replyTo" : "john@example.com", // reply-to optional
+        "sendTo" : [
+            "joy@example.com",
+            "jane@example.com"
+        ],
+        "cc" : [
+            "jonah@example.com"
+        ],
+        "bcc" : [
+            "jack@example.com"
+        ],
+        "subject" : "test api", // mail subject
+        "message" : "simple mail request from js to php", // mail body html enabled
+        "attachment" : "readme.md", // only in relative path from api server send file example, "../maildata/filename.pdf"
+        
+        "authKey" : authKey // your authkey
+    }
+
+    // use this below line to call mail function according to need currently set to call on every page reload
+    new Arcmail(data).send();
+    
+    // use this below code or function to handle custom response text
+    function respond() {
+        if(response == "mail sent") {
+            console.log("Mail has been sent successfully");
+        } 
+    }
+
+    // coded by @anishh.arc find on instagram
+    </script>
+</body>
+</html>

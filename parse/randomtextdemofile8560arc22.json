@@ -1,0 +1,12 @@
+[
+    {
+        "name" : "self",
+        "domain" : "anisalsid.com",
+        "authkey" : "auth1"
+    },
+    {
+        "name" : "other",
+        "domain" : "any",
+        "authkey" : "auth2"
+    }
+]
