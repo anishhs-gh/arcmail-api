@@ -1,4 +1,4 @@
-# arcmail-api
+# Documentation
 
 arcmail-api is a open source api for sending emails using javascript you can send mails from localhost too without xampp or wampp server, for testing purpose you can setup "parse/send.php" file in any online server and send emails from anywhere using link to this file in "js/script.js". Will write described documentation soon... :)
 
@@ -82,3 +82,5 @@ $getKeys = trim(file_get_contents('randomtextdemofile8560arc22.json'), "\xEF\xBB
 ## Message
 
 if you stil have any issues you can raise an issue we will help and your suggestions and modifications are welcome
+
+*[@anishh.arc](https://instagram.com/anishh.arc) - instagram*
