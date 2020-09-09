@@ -9,7 +9,7 @@ arcmail-api is a open source api for sending emails using javascript you can sen
 if you have uploaded all files in a server, just set full path to "js/script.js" of "parse/send.php" on line number 21
 
 ```javascript
-    xhr.open("POST", "https://yourwebsite.com/parse/send.php");
+xhr.open("POST", "https://yourwebsite.com/parse/send.php");
 ```
 
 ## Link JavaScript File
