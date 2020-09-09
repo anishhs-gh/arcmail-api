@@ -24,7 +24,7 @@ Link "js/script.js" file wherever you want to use, be sure the path is correct o
 
 you have to use this code and define correct values in order to send emails, you can use it on same file from where you want to send mails. If you use this on separate ".js" file you have to link this correctly
 
-```
+```javascript
 // use this keys and assign custom related values
         const authKey = "auth1";
         const data = {
