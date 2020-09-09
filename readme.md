@@ -8,7 +8,7 @@ arcmail-api is a open source api for sending emails using javascript you can sen
 
 if you have uploaded all files in a server, just set full path to "js/script.js" of "parse/send.php" on line number 21
 
-```
+```javascript
     xhr.open("POST", "https://yourwebsite.com/parse/send.php");
 ```
 
@@ -16,7 +16,7 @@ if you have uploaded all files in a server, just set full path to "js/script.js"
 
 Link "js/script.js" file wherever you want to use, be sure the path is correct otherwise it will not going to work
 
-```
+```html
 <script src='js/script.js'>
 ```
 
@@ -53,7 +53,7 @@ you have to use this code and define correct values in order to send emails, you
 
 you can use any event listener according to your need it depends how you want to use it. Here is a simple auto function
 
-```
+```javascript
 // use this below line to call mail function according to need currently set to call on every page reload
 new Arcmail(data).send();
 ```
@@ -62,7 +62,7 @@ new Arcmail(data).send();
 
 you can modify custom responses whatever you want by this function
 
-```
+```javascript
 // use this below code or function to handle custom response text
     function respond() {
         if(response == "mail sent") {
@@ -75,7 +75,7 @@ you can modify custom responses whatever you want by this function
 
 authentication keys can be modifiable in a "parse\randomtextdemofile8560arc22.json" or can be generated from anywhere it simply a file where authkeys can be stored if you change the file name of json it will not going to work and authentication will be failed. You can set filename in "parse/send.php" on line number 10
 
-```
+```php
 $getKeys = trim(file_get_contents('randomtextdemofile8560arc22.json'), "\xEF\xBB\xBF");
 ```
 
